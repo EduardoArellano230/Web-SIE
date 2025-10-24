@@ -1,0 +1,144 @@
+.formulario_from {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.formulario_from h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contacto_from{
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacto_from input:focus, .contacto_from textarea:focus, .contacto_from select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.tooltip {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.formulario_from button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario_from button:hover {
+  background-color: #0056b3;
+}
+
+.mensaje-inicial {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #007bff;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.loader-spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ✅ Estilos responsivos */
+@media (max-width: 600px) {
+  .formulario_from {
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 12px;
+    box-shadow: none;
+    gap: 12px;
+  }
+
+  .formulario_from h2 {
+    font-size: 1.5rem;
+  }
+
+  .formulario_from input,
+  .formulario_from textarea,
+  .formulario_from select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .formulario_from button {
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .mensaje-inicial {
+    font-size: 1rem;
+    margin: 20px 10px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .loader-spinner {
+    width: 40px;
+    height: 40px;
+    border-width: 5px;
+  }
+
+  .tooltip {
+    font-size: 0.7rem;
+  }
+}

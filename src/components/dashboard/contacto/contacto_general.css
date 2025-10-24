@@ -1,0 +1,186 @@
+.contacto-container {
+    margin-left: 250px ;
+  padding: 30px;
+  background-color: #f4f7fc;
+  border-radius: 12px;
+  max-width: 98%;
+}
+
+.contacto-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-table th, .contact-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-table td {
+  font-size: 14px;
+}
+
+.contact-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Columna de correo más angosta */
+.col-correo {
+  max-width: 100px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Estilos para los botones */
+.btn-group {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.add {
+  background-color: #2ecc71;
+}
+
+.btn.edit {
+  background-color: #f39c12;
+}
+
+.btn.delete {
+  background-color: #e74c3c;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+
+/* Fondo oscuro que cubre toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenedor del formulario */
+.modal-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+/* Inputs y textarea */
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Botones dentro del modal */
+.modal-content button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.status-pendiente {
+  background-color: #ffdddd;
+  color: #c62828;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.status-contactado {
+  background-color: #ddffdd;
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.modal-content button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-content button:first-of-type:hover {
+  background-color: #007bff;
+}
+
+.modal-content button:last-of-type {
+  background-color: #007bff;
+}
+
+.modal-content button:last-of-type:hover {
+  background-color: #007bff;
+}
+
+/* Animación suave al mostrar el modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,353 @@
+/* ========== CONTPAQi HERO SECTION ========== */
+.contpaqi-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #5fb9e2, #ffffff);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.1);
+  margin-bottom: 3rem;
+
+  animation: fadeInUp 1s ease forwards;
+}
+
+.contpaqi-hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contpaqi-hero-logo {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.contpaqi-hero-right {
+  flex: 1;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.contpaqi-hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #007bff, #00c7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.contpaqi-hero-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contpaqi-hero-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contpaqi-icono-red {
+  font-size: 1.8rem;
+  color: #007bff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contpaqi-icono-red:hover {
+  transform: scale(1.3);
+  color: #00aaff;
+}
+
+.contpaqi-contacto-btn {
+  background-color: #007bff;
+  color: white !important;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.contpaqi-contacto-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contpaqi-hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .contpaqi-hero-title {
+    font-size: 2rem;
+  }
+
+  .contpaqi-hero-text {
+    font-size: 1rem;
+  }
+
+  .contpaqi-contacto-btn {
+    margin-top: 1rem;
+  }
+}
+
+/* CATEGORÍAS */
+.categorias {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.categoria {
+  margin-bottom: 40px;
+}
+
+.categoria h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.tarjetas {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tarjeta {
+  cursor: pointer;
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.tarjeta-imagen {
+   width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+/* Contenido al hacer hover */
+.tarjeta-contenido {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: #76aeeb;
+  color: white;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+   word-wrap: break-word;
+  overflow-y: auto;
+  padding: 15px;
+  box-sizing: border-box;
+  
+}
+
+.tarjeta-contenido p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: justify;
+  margin: 0;
+}
+
+.tarjeta-contenido h2 {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+.tarjeta:hover {
+  transform: scale(1.03);
+  
+}
+
+.tarjeta:hover .tarjeta-contenido {
+  opacity: 1;
+}
+
+.tarjeta-contenido h4 {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contpaqi-logo {
+    width: 200px;
+  }
+
+  .tarjeta {
+    width: 90%;
+    height: 200px;
+  }
+}
+
+.titulo-ofertas {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #76aeeb;
+  user-select: none;
+}
+.modal-overlay-contpaqi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido-contpaqi {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal-imagen-contpaqi {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.modal-cerrar-contpaqi {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.boton-redes {
+  margin-top: 1rem;
+}
+
+.btn-redes {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-redes:hover {
+  background-color: #0056b3;
+}
+.iconos-redes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.icono-red {
+  font-size: 24px;
+  color: #ffffff;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icono-red:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+
+
+/* Estilo para la sección de certificaciones */
+
+
+.tarjetas-certificados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.tarjeta-certificado {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 220px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.tarjeta-certificado:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.imagen-certificado {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.2);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-certificado:hover .imagen-certificado {
+  transform: scale(1.1);
+}
+
+

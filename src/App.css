@@ -1,0 +1,315 @@
+/*SECCIÓN SERVICIOS*/
+.servicios {
+  background-color: #1da1f2;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.servicio-card {
+  background-color: white;
+  color: #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: background 0.5s ease, transform 0.3s, color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icono {
+  color: #1da1f2;
+  margin-bottom: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.servicio-card:hover {
+  background: linear-gradient(135deg, #1da1f2, #0d8ddb);
+  color: white;
+  transform: scale(1.05);
+}
+
+.servicio-card:hover .icono {
+  color: white;
+  transform: rotate(10deg) scale(1.2);
+}
+
+/*INFO BANNER*/
+.info-banner h1,
+.ariculos-info-banner h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-banner h2,
+.ariculos-info-banner h2 {
+  font-size: 1.2rem;
+}
+
+.info-banner span,
+.ariculos-info-banner span {
+  font-weight: bold;
+}
+
+/*INFO CAROUSEL*/
+.info-carousel {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info-carousel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1d4ed8;
+}
+
+.info-carousel p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+/*CATÁLOGO SISTEMAS*/
+.catalogo-sistemas {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.catalogo-sistemas h2 {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.catalogo-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.catalogo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.catalogo-icono {
+  font-size: 40px;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.catalogo-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.catalogo-button {
+  margin-top: 30px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.catalogo-button:hover {
+  background-color: #2563eb;
+}
+
+/*MODAL SISTEMAS*/
+.modal-overlay-Sistemas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.modal-content-Sistemas {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+  box-sizing: border-box;
+}
+
+.modal-icon {
+  font-size: 60px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.modal-content-Sistemas h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.modal-content-Sistemas p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.close-button-Sistemas {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.close-button-Sistemas:hover {
+  color: #1d4ed8;
+}
+
+.modal-header-Sistemas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/*ARTÍCULOS*/
+.ariculos {
+  background-color: #8300E9;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.ariculos h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ariculos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.ariculos-card {
+  background-color: white;
+  color: #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: background 0.5s ease, transform 0.3s, color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.ariculos-icono {
+  color: #8300E9;
+  margin-bottom: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.ariculos-card:hover {
+  background: linear-gradient(135deg, #8300E9, #8300E0);
+  color: white;
+  transform: scale(1.05);
+}
+
+.ariculos-card:hover .ariculos-icono {
+  color: white;
+  transform: rotate(10deg) scale(1.2);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .modal-content-Sistemas {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .modal-content-Sistemas h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content-Sistemas p {
+    font-size: 1rem;
+  }
+
+  .servicios h2,
+  .ariculos h2,
+  .catalogo-sistemas h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content-Sistemas {
+    max-height: 80vh;
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .modal-content-Sistemas h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-content-Sistemas p {
+    font-size: 0.95rem;
+  }
+
+  .servicio-card,
+  .ariculos-card {
+    padding: 1rem;
+  }
+
+  .servicios,
+  .ariculos,
+  .catalogo-sistemas {
+    padding: 2rem 0.5rem;
+  }
+}

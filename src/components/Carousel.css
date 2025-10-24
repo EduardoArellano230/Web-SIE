@@ -1,0 +1,147 @@
+.carousel {
+position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  max-height: 82vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.slide.active {
+  left: 0;
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: #2e2e2e;
+  max-width: 400px;
+  background: linear-gradient(90deg , #61a6d8, #f2f7fa);
+  opacity: 0.8;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  margin: 0 0 10px;
+  font-size: 27px;
+}
+
+.content p {
+  margin: 0 0 10px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.content button {
+  background-color: #00c6ff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #0072ff;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 250px;
+  }
+  .content {
+    bottom: 20px;
+    left: 20px;
+    max-width: 90%;
+    padding: 15px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .content button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 180px;
+  }
+  .content h2 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+  .content button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+
+.carousel-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; 
+  background-color: #f4f4f4;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #d3d3d3;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,118 @@
+/*SECCIÓN DE OFERTAS */
+.Ofertas-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+}
+
+.ofertas-titulo {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1px;
+  cursor: pointer;
+  color: #007bff;
+  user-select: none;
+}
+
+.ofertas-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.oferta-card {
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.oferta-card:hover {
+  transform: scale(1.03);
+}
+
+.oferta-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.oferta-titulo-overlay {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oferta-card:hover .oferta-titulo-overlay {
+  opacity: 1;
+}
+
+.oferta-titulo-overlay h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/*MODAL*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+}
+
+.modal-imagen {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

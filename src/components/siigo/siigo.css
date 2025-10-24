@@ -1,0 +1,494 @@
+.siigo-landing {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2fbff;
+  color: #003246;
+}
+
+.siigo-hero-simple {
+  aspect-ratio: 17 / 6;
+  height: auto;
+  max-height: 100;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+
+.siigo-precio-bloque {
+  margin: 1.5rem 0;
+}
+
+.siigo-subnota {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.texto-chico {
+  font-size: 1rem;
+  color: #004b63;
+  margin-bottom: 1.5rem;
+}
+
+.precio-linea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.siigo-precio {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff5722;
+  line-height: 1.1;
+}
+
+.iva-texto {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.plan-anual-texto {
+  font-size: 1.2rem;
+  color: #004b63;
+  white-space: nowrap;
+}
+
+
+.siigo-btn.gigante {
+  font-size: 1.8rem;
+  padding: 1.4rem 3.5rem;
+  border-radius: 50px;
+  background-color: #00c7ff;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(0, 199, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.siigo-btn.gigante:hover {
+  background-color: #00a3d7;
+  transform: scale(1.05);
+}
+
+
+.boton-flotante-con-icono {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icono-flotante {
+  position: absolute;
+  top: -50px; 
+  left: 99%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+
+/* Animación de entrada */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.siigo-hero-content h1 {
+  font-size: 4rem;
+ margin-top: 0;
+  margin-bottom: 0.5rem; 
+    background: linear-gradient(90deg, #05688f, #0a98e4, #0c91c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.siigo-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #004b63;
+}
+.siigo-btn {
+  background-color: #00c7ff;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 199, 255, 0.3);
+}
+
+.siigo-btn:hover {
+  background-color: #00a3d7;
+  transform: scale(1.05);
+}
+
+
+.siigo-hero-content.enhanced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  animation: floatUp 2.5s ease-in-out infinite;
+}
+
+.pulse-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 199, 255, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 199, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 199, 255, 0); }
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.siigo-hero-simple::before {
+  content: "☁️";
+  font-size: 180px;
+  color: rgba(0, 199, 255, 0.08);
+  position: absolute;
+  right: 20px;
+  bottom: 10
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.siigo-modulo-dos-columnas {
+  background-color: #f6fcff;
+  padding: 4rem 2rem;
+}
+
+.modulo-dos-columnas-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modulo-texto {
+  flex: 1 1 550px;
+}
+
+.modulo-texto h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+}
+
+.modulo-texto ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #003246;
+}
+
+.modulo-texto li {
+  margin-bottom: 1rem;
+}
+
+.modulo-imagen {
+  flex: 1 1 450px;
+  text-align: center;
+}
+
+.modulo-imagen img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
+/* Beneficios individuales */
+.beneficios-lista {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem 2rem;
+}
+
+.beneficio-item {
+ display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #003246;
+}
+
+.beneficio-icono-lista {
+  color: #00c7ff;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.siigo-beneficios h2 {
+  text-align: center;
+  font-size: 2.5rem; 
+  font-weight: 800;  
+  background: linear-gradient(90deg, #045575, #11acff, #08a7e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+/* Sección Final */
+.siigo-final {
+  background-color: #dff6fd;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.siigo-final-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.siigo-final h2 {
+  font-size: 2.5rem;
+  color: #66c5eb;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.siigo-final p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.siigo-btn-final {
+  background-color: #00c7ff;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s, transform 0.3s;
+  border: none;            
+  outline: none;
+  box-shadow: 0 8px 20px rgba(0, 199, 255, 0.3);
+}
+
+.siigo-btn-final:hover {
+  background-color: #00a3d7;
+  transform: scale(1.05);
+}
+
+.siigo-btn-final i {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+
+.siigo-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.siigo-modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.siigo-cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+.siigo-contacto-container {
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.siigo-contacto-titulo {
+  font-size: 1.8rem;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.siigo-contacto-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.siigo-contacto-form label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+  color: #003246;
+}
+
+.siigo-contacto-form input {
+  width: 90%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.siigo-contacto-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #00c7ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.siigo-contacto-btn:hover {
+  background-color: #00a3d7;
+}
+
+
+@media (max-width: 768px) {
+  
+  .siigo-btn.gigante {
+  font-size: 0.6rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .icono-flotante {
+    top: -25px;
+    width: 40px;
+  }
+  .boton-flotante-con-icono {
+    bottom: 1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column; 
+    gap: 0.5rem;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .beneficios-lista {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .beneficio-item {
+    font-size: 1rem;
+    justify-content: flex-start;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .siigo-hero-simple {
+    padding: 1rem 1rem 3rem 1rem;
+    
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+}
+
+

@@ -1,0 +1,341 @@
+/* ======= HERO PRINCIPAL ======= */
+.nservice-hero {
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nservice-hero-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.nservice-title {
+  font-size: 2.8rem;
+  color: #0d8ddb;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.nservice-subtext {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.nservice-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nservice-btn {
+  background-color: #0d8ddb;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.nservice-btn:hover {
+  background-color: #006bb3;
+}
+
+.nservice-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nservice-icono-red {
+  color: #0d8ddb;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nservice-icono-red:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
+
+/* ======= RESPONSIVE HERO ======= */
+@media (max-width: 600px) {
+  .nservice-title {
+    font-size: 2rem;
+  }
+
+  .nservice-subtext {
+    font-size: 1rem;
+  }
+}
+
+/* ======= SUBTÍTULO Y BOTÓN ======= */
+.Nservice-sub {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.Nservice-subtext {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.Nservice-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: #0d8ddb;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.Nservice-btn:hover {
+  background-color: #0070b8;
+}
+
+/* ======= ICONOS DE REDES SOCIALES ======= */
+.Nservice-iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.Nservice-icono-red {
+  color: #007bff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.Nservice-icono-red:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
+
+/* ======= TÍTULO PRINCIPAL ======= */
+.Nservice-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #0d8ddb;
+}
+
+/* ======= GRID DE TARJETAS ======= */
+.Nservice-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* ======= TARJETAS ======= */
+.Nservice-card {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+.Nservice-card:hover,
+.Nservice-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  color: #0056b3;
+}
+
+.Nservice-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #0d8ddb;
+}
+
+.Nservice-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ======= ICONO DENTRO DE LA TARJETA ======= */
+.Nservice-icon {
+  font-size: 40px;
+  color: #0d8ddb;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.Nservice-icon:hover {
+  color: #0056b3;
+}
+
+/* ======= MODAL OVERLAY ======= */
+.Nservice-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 20, 40, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* ======= CONTENIDO MODAL ======= */
+.Nservice-modal-content {
+  background: #fff;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.Nservice-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #0d8ddb;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Nservice-modal-close:hover {
+  color: #0056b3;
+}
+
+.Nservice-modal-content h2 {
+  font-size: 2.2rem;
+  color: #0d8ddb;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Nservice-modal-content p,
+.Nservice-modal-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.Nservice-modal-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Nservice-modal-content li::marker {
+  color: #0d8ddb;
+  font-size: 1.2rem;
+}
+
+/* ======= VIDEO EMBED ======= */
+.Nservice-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin: 1.5rem 0;
+}
+
+.Nservice-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ======= ANIMACIÓN FADEIN ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .Nservice-title {
+    font-size: 2rem;
+  }
+
+  .Nservice-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .Nservice-card p {
+    font-size: 0.95rem;
+  }
+
+  .Nservice-modal-content {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+
+  .Nservice-modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .Nservice-modal-content p,
+  .Nservice-modal-content li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .Nservice-icon {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Nservice-title {
+    font-size: 1.6rem;
+  }
+
+  .Nservice-modal-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .Nservice-modal-content p,
+  .Nservice-modal-content li {
+    font-size: 0.9rem;
+  }
+
+  .Nservice-modal-close {
+    font-size: 1.5rem;
+  }
+}
